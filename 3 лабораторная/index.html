@@ -14,7 +14,8 @@
 
 
     <div class="navbar-brand">
-        <img src="media/logo.png" alt="logo" style="height: 3.25rem;">
+        <a href="#">
+            <img src="media/logo.png" alt="logo" style="height: 3.25rem;"></a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -31,27 +32,71 @@
 </nav>
 
 <body>
-    <div class="hero parallax" data-parallax="scroll" data-image-src="media/2.JPG" style="min-height: 400px;
-    background: transparent; width: 100%">
+    <section class="hero is-dark is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8">
+                        <h1 class="title">
+                            Путешествия, веб и котики
+                        </h1>
+                        <h2 class="subtitle">
+                            Мой личный блог
+                        </h2>
+                    </div>
+                    <div class="column">
+                        <img src="media/cat.png" alt="media">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </div>
-    <div class="container">
-        <h1 class="title is-1">Заголовок</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cupiditate nisi, veniam voluptates vero eum itaque illum soluta assumenda nulla consequuntur voluptatem enim vitae voluptatum! Voluptatibus omnis vel doloremque eaque voluptatem deleniti,
-            a sunt amet in aliquid facere rerum nisi officiis sint, dolorum est exercitationem odio esse temporibus maiores adipisci tenetur nesciunt, quae ullam. Itaque, modi ipsam aliquid illum explicabo dolorum quis delectus harum ad non nam neque
-            distinctio tempore facere rerum doloremque sit alias necessitatibus, officiis dolor blanditiis debitis consequuntur possimus! Eos, placeat. Sint culpa voluptatibus corporis sed adipisci dicta ratione cum repellendus corrupti saepe nam unde
-            voluptatum cupiditate deserunt consequatur reiciendis eos alias repudiandae, porro rerum sequi nisi! Sint numquam sapiente, exercitationem, adipisci fugiat modi iste accusamus velit quo officia cupiditate, non animi molestiae odit culpa amet
-            at. Enim unde iure ipsam hic a excepturi vel quas laborum, reiciendis placeat natus odio doloribus commodi voluptatum praesentium. Esse sit quasi nisi optio! In provident error dolorem, blanditiis saepe voluptates ea consequuntur mollitia
-            eos sunt quidem facere enim vel nemo labore eligendi cupiditate neque nobis, similique adipisci quaerat! Rem officiis quidem autem maiores architecto fuga est facere soluta eius culpa magni recusandae quasi odit, ipsam exercitationem perferendis
-            ex magnam cupiditate animi possimus ab iusto quisquam iure? Rerum quam mollitia beatae dignissimos iusto possimus, quis quaerat veritatis iste sunt quas eius, illo assumenda nostrum eveniet et qui consequatur fuga quae repudiandae, fugiat
-            natus dolorum porro totam. Suscipit reprehenderit architecto culpa nihil, molestias facere tempora aut quas ex. Sequi minus deserunt optio praesentium repudiandae ab aliquid aspernatur rerum unde velit eum veritatis explicabo officiis omnis
-            consectetur maxime nemo, totam laudantium. Ratione minus, eligendi corrupti blanditiis voluptates nam officia quod nihil ipsam enim ad possimus explicabo. Inventore quia nostrum laboriosam reprehenderit. Dolores ipsum obcaecati quasi. Voluptatum
-            odio accusantium adipisci sit iste! Aut, magnam!</p>
 
+    <div class="container ">
+        <h1 id="#top" class="title is-1">Горный Алтай</h1>
+        <p>В 2018 году я посетила республику Алтай. Наше путешествие началось с города Барнаул, это был авто-тур, поездка с такими же как и ты любителями активного отдыха.</p>
 
-        <img src="media/1.JPG" alt="photo">
-
+        <figure class="image">
+            <img src="media/1.JPG" alt="photo">
+        </figure>
 
     </div>
+    <div id="upbutton"></div>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                if ($('#upbutton').is(':hidden')) {
+                    $('#upbutton').css({
+                        opacity: 1
+                    }).fadeIn('slow');
+                }
+            } else {
+                $('#upbutton').stop(true, false).fadeOut('fast');
+            }
+        });
+        $('#upbutton').click(function() {
+            $('html, body').stop().animate({
+                scrollTop: 0
+            }, 300);
+        });
+    </script>
+
+    <style>
+        #upbutton {
+            background: url("media/up.png") no-repeat top left;
+            height: 60px;
+            width: 60px;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+            display: none;
+            position: fixed;
+            z-index: 999;
+        }
+    </style>
 </body>
 <script>
     $(document).ready(function() {
@@ -76,7 +121,6 @@
         } else {
             $(".start").css('background', 'top')
         }
-    }
 </script>
 
 </html>
