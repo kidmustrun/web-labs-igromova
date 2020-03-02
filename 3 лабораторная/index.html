@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.scrollme.js"></script>
+    <title>Document</title>
+</head>
+<nav class="navbar is-fixed-navbar is-black" role="navigation" aria-label="main navigation" style="font-family: Impact;">
+
+
+    <div class="navbar-brand">
+        <img src="media/logo.png" alt="logo" style="height: 3.25rem;">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <a href="#" class="navbar-item is-uppercase">Блог</a>
+            <a href="#" class="navbar-item is-uppercase">Фотогалерея</a>
+            <a href="#" class="navbar-item is-uppercase">Обо мне</a>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="hero parallax" data-parallax="scroll" data-image-src="media/2.JPG" style="min-height: 400px;
+    background: transparent; width: 100%">
+    </div>
+    <div class="container">
+        <h1 class="title is-1">Заголовок</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cupiditate nisi, veniam voluptates vero eum itaque illum soluta assumenda nulla consequuntur voluptatem enim vitae voluptatum! Voluptatibus omnis vel doloremque eaque voluptatem deleniti,
+            a sunt amet in aliquid facere rerum nisi officiis sint, dolorum est exercitationem odio esse temporibus maiores adipisci tenetur nesciunt, quae ullam. Itaque, modi ipsam aliquid illum explicabo dolorum quis delectus harum ad non nam neque
+            distinctio tempore facere rerum doloremque sit alias necessitatibus, officiis dolor blanditiis debitis consequuntur possimus! Eos, placeat. Sint culpa voluptatibus corporis sed adipisci dicta ratione cum repellendus corrupti saepe nam unde
+            voluptatum cupiditate deserunt consequatur reiciendis eos alias repudiandae, porro rerum sequi nisi! Sint numquam sapiente, exercitationem, adipisci fugiat modi iste accusamus velit quo officia cupiditate, non animi molestiae odit culpa amet
+            at. Enim unde iure ipsam hic a excepturi vel quas laborum, reiciendis placeat natus odio doloribus commodi voluptatum praesentium. Esse sit quasi nisi optio! In provident error dolorem, blanditiis saepe voluptates ea consequuntur mollitia
+            eos sunt quidem facere enim vel nemo labore eligendi cupiditate neque nobis, similique adipisci quaerat! Rem officiis quidem autem maiores architecto fuga est facere soluta eius culpa magni recusandae quasi odit, ipsam exercitationem perferendis
+            ex magnam cupiditate animi possimus ab iusto quisquam iure? Rerum quam mollitia beatae dignissimos iusto possimus, quis quaerat veritatis iste sunt quas eius, illo assumenda nostrum eveniet et qui consequatur fuga quae repudiandae, fugiat
+            natus dolorum porro totam. Suscipit reprehenderit architecto culpa nihil, molestias facere tempora aut quas ex. Sequi minus deserunt optio praesentium repudiandae ab aliquid aspernatur rerum unde velit eum veritatis explicabo officiis omnis
+            consectetur maxime nemo, totam laudantium. Ratione minus, eligendi corrupti blanditiis voluptates nam officia quod nihil ipsam enim ad possimus explicabo. Inventore quia nostrum laboriosam reprehenderit. Dolores ipsum obcaecati quasi. Voluptatum
+            odio accusantium adipisci sit iste! Aut, magnam!</p>
+
+
+        <img src="media/1.JPG" alt="photo">
+
+
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });
+    const $window = $(window);
+
+    $window.on('scroll', onScroll);
+
+    function onScroll() {
+        if ($window.scrollTop() >= $window.height()) {
+            $(".").css('', '');
+            $(".").css('transition', '1s');
+        } else {
+            $(".start").css('background', 'top')
+        }
+    }
+</script>
+
+</html>
