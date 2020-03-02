@@ -110,17 +110,6 @@
 
         });
     });
-    const $window = $(window);
-
-    $window.on('scroll', onScroll);
-
-    function onScroll() {
-        if ($window.scrollTop() >= $window.height()) {
-            $(".").css('', '');
-            $(".").css('transition', '1s');
-        } else {
-            $(".start").css('background', 'top')
-        }
 </script>
 
 </html>
