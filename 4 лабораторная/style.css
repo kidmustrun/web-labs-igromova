@@ -36,9 +36,22 @@ body {}
     .hero-title {
         background: url(media/1.png) no-repeat !important;
         background-size: auto 100% !important;
+        position: relative;
+        bottom: 3.5rem;
     }
     .is-medium {
         min-height: calc(100vh - 3.25rem) !important;
+    }
+    .navbar.is-black {
+        background-color: transparent !important;
+    }
+    .navbar-burger.is-active span {
+        color: white !important;
+    }
+    .navbar-menu.is-active {
+        height: 100vh !important;
+        text-align: center;
+        justify-content: center;
     }
 }
 
@@ -60,10 +73,11 @@ body {}
 }
 
 .button-logo {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
     border: 1px solid gray !important;
     font-family: Raleway !important;
     font-size: 13px !important;
+    border-radius: 3px !important;
 }
 
 @font-face {
@@ -105,7 +119,7 @@ h2 {
     display: block;
 }
 
-.button {
+.button-shop {
     border-radius: 0 !important;
     font-family: Raleway-Bold;
     letter-spacing: 0.13em;
@@ -114,4 +128,12 @@ h2 {
 .is-warning {
     background: #FFE500 !important;
     color: black !important;
+}
+
+.navbar-burger span {
+    color: black !important;
+}
+
+.is-black {
+    background-color: black;
 }
