@@ -1,0 +1,117 @@
+* {
+    font-family: Raleway;
+}
+
+body {}
+
+@media screen and (min-width: 1023px) {
+    .navbar-start--centered {
+        float: none;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+    .container .image-pos {
+        width: 60%;
+        float: right;
+        position: absolute;
+        bottom: -100px;
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-item span {
+        display: none;
+    }
+    .container .image-pos {
+        display: none;
+    }
+    .hero-title {
+        background: url(media/1.png) no-repeat !important;
+        background-size: auto 100% !important;
+    }
+    .is-medium {
+        min-height: calc(100vh - 3.25rem) !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-title {
+        margin-top: 10% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-title {
+        margin-top: 50% !important;
+    }
+}
+
+.navbar .navbar-start a {
+    display: flex;
+    align-items: center;
+}
+
+.button-logo {
+    background-color: transparent !important;
+    border: 1px solid gray !important;
+    font-family: Raleway !important;
+    font-size: 13px !important;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("fonts/Raleway-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.navbar-item {
+    color: #FFFFFF !important;
+    font-size: 13px !important;
+}
+
+.navbar-item a {
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+.navbar-item a:hover {
+    color: white;
+}
+
+.navbar-item span {
+    color: white;
+    font-size: 10px;
+}
+
+h2 {
+    font-family: Raleway-Bold;
+    letter-spacing: 0.12em;
+    display: block;
+}
+
+.button {
+    border-radius: 0 !important;
+    font-family: Raleway-Bold;
+    letter-spacing: 0.13em;
+}
+
+.is-warning {
+    background: #FFE500 !important;
+    color: black !important;
+}

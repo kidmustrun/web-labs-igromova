@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<nav class="navbar is-fixed-navbar is-black" role="navigation" aria-label="main navigation">
+
+
+    <div class="navbar-brand">
+
+        <div class="navbar-item"><button class="button is-uppercase is-dark button-logo is-hidden-desktop">Veles</button></div>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start navbar-start--centered">
+            <div class="navbar-item"><button class="button is-uppercase is-dark button-logo is-hidden-touch">Veles</button></div>
+            <div class="navbar-item"><a href="#" class=" is-uppercase">Земля</a></div>
+            <div class="navbar-item"><a href="#" class=" is-uppercase">Крановые площадки</a></div>
+            <div class="navbar-item"><a href="#" class=" is-uppercase">Выгрузка вагонов</a></div>
+            <div class="navbar-item"><a href="#" class=" is-uppercase">Фасовка</a></div>
+            <div class="navbar-item"><a href="#" class="is-uppercase">Щебень</a></div>
+            <div class="navbar-item"><span href="#" class="is-uppercase">+7 (927) 678-45-14</span>
+                <div class="navbar-item"><span href="#" class="is-uppercase">г. Казань, Складская 20</span>
+                </div>
+            </div>
+        </div>
+
+</nav>
+
+<body>
+    <section class="hero is-black is-medium hero-title">
+        <div class="hero-body">
+            <div class="container container-title">
+                <h2 class="subtitle is-uppercase">
+                    выгрузка вагонов, АРЕНДА ЗЕМЛИ, КРаНОВЫХ ПЛОЩАДОК, ответственное хранение
+                </h2>
+                <button class="button is-warning is-uppercase">Заказать</button>
+
+            </div>
+
+        </div>
+    </section>
+    <div class="container">
+        <figure class="image image-pos">
+            <img src="media/1.png" alt="1">
+        </figure>
+    </div>
+    <script>
+        $(document).ready(function() {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+</body>
+
+</html>
