@@ -45,6 +45,9 @@ body {}
     .navbar.is-black {
         background-color: transparent !important;
     }
+    .navbar-burger.is-active {
+        background-color: black;
+    }
     .navbar-burger.is-active span {
         color: white !important;
     }
