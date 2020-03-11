@@ -1,8 +1,15 @@
 * {
     font-family: Raleway;
+    padding: 0;
+    margin: 0;
 }
 
-body {}
+body {
+    background-color: #F1F2F5;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 @media screen and (min-width: 1023px) {
     .navbar-start--centered {
@@ -18,11 +25,37 @@ body {}
         bottom: -100px;
         left: 40%;
     }
+    .container-main {
+        margin-top: 10rem !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
     h2 {
         width: 40%;
+    }
+    .card:hover {
+        position: relative;
+        bottom: 20px;
+    }
+    .media {
+        margin-bottom: 85px;
+    }
+    .rent {
+        text-align: center;
+    }
+    .rent img {
+        margin-top: 110px;
+        box-shadow: -3em -3em #F1F2F5;
+        width: 80%;
+    }
+    .is-4 {
+        font-size: 18px !important;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .columns-services {
+        margin-top: 2rem !important;
     }
 }
 
@@ -40,7 +73,7 @@ body {}
         bottom: 3.5rem;
     }
     .is-medium {
-        min-height: calc(100vh - 3.25rem) !important;
+        min-height: 100vh !important;
     }
     .navbar.is-black {
         background-color: transparent !important;
@@ -67,6 +100,36 @@ body {}
 @media screen and (max-width: 768px) {
     .container-title {
         margin-top: 50% !important;
+    }
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .media {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .column {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .window button {
+        display: block;
+        margin: 0 auto;
+    }
+    .window p {
+        text-align: center;
+    }
+    .window h1 {
+        text-align: center;
+    }
+    .is-4 {
+        font-size: 11px !important;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .columns-services {
+        padding-top: 1rem !important;
     }
 }
 
@@ -139,4 +202,94 @@ h2 {
 
 .is-black {
     background-color: black;
+}
+
+.container>p {
+    font-family: Raleway-Bold;
+    font-size: 30px;
+}
+
+.container-main {
+    text-align: center;
+}
+
+.is-4 {
+    font-family: Raleway !important;
+    font-style: normal !important;
+    font-weight: 600;
+    color: #161616;
+}
+
+.card-content {
+    height: 8rem !important;
+}
+
+.wrapper {
+    background: white;
+}
+
+.advantages {
+    padding-top: 100px;
+}
+
+.numbers {
+    background-color: #FFE500 !important;
+    width: 64px;
+    height: 64px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 64px;
+}
+
+.media-content .content {
+    margin: 0 !important;
+    font-family: Raleway;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+
+.columns-1 {
+    margin-top: 20px !important;
+}
+
+.window h1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.window {
+    text-align: left;
+    margin-top: 150px;
+}
+
+.window p {
+    margin-top: 25px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #161616;
+}
+
+.window button {
+    border-radius: 0;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 30px !important;
+    height: 55px;
+    margin-top: 40px;
 }
