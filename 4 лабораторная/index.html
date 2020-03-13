@@ -13,20 +13,20 @@
 
 <body>
     <header>
-        <nav class="navbar is-fixed-navbar is-black" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
 
 
-            <div class="navbar-brand">
+            <div class="header-navbar-brand navbar-brand">
 
                 <div class="navbar-item"><button class="button is-uppercase is-dark button-logo is-hidden-desktop">Veles</button></div>
 
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <a role="button" class="header-navbar-burger navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="header-navbar-menu navbar-menu">
                 <div class="navbar-start navbar-start--centered">
                     <div class="navbar-item"><button class="button is-uppercase is-dark button-logo is-hidden-touch">Veles</button></div>
                     <div class="navbar-item"><a href="#" class=" is-uppercase">Земля</a></div>
@@ -43,7 +43,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero is-black is-medium hero-title">
+        <section class="hero is-black is-medium hero-title ">
             <div class="hero-body">
                 <div class="container container-title">
                     <h2 class="subtitle is-uppercase">
@@ -601,13 +601,13 @@
                 <p>Карта территорий</p>
 
                 <img style="width: 70%; margin-top: 5%;" src="media/11.png" alt="cart">
-                <div class="columns">
+                <div class="columns" style="padding-bottom: 100px;">
                     <div class="column">
                         <div class="window">
                             <h1>Аренда земли</h1>
                             <p>Предлагаем в аренду открытые площадки для хранения грузов и техники. Площадь базы составляет 11,5га. Общая протяженность внутренних ж/д путей позволяет производить погрузо-разгрузочные работы до 60 вагонов в сутки единовременно.
                                 На базе работают два маневровых собственных тепловоза. Есть железнодорожные и автомобильные весы, козловой кран, повышенный путь, пандусы для выгрузки крытых вагонов и фур.</p>
-                            <button class="button button-shop is-dark is-uppercase">Получить консультацию</button>
+                            <button class="button button-shop is-dark is-uppercase button-consultation">Получить консультацию</button>
                         </div>
                     </div>
                     <div class="column rent">
@@ -620,8 +620,63 @@
         </div>
         </div>
         </div>
+        <section class="hero is-black is-medium hero-content">
+            <figure class="image is-5by4-mobile is-5by3-tablet">
+                <img src="media/12.jpg" alt="media">
+            </figure>
+            <div class="hero-body">
+
+                <div class="container">
+
+                    <h2 class="subtitle is-uppercase">
+                        Аренда складов
+                    </h2>
+                    <p style="font-family: Raleway;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;">
+                        Предлагаем в аренду крытые и открытые складские и производственные площадки. Склады комплекса оснащены погрузочно-разгрузочной техникой. Открытые складские площадки приспособлены и для хранения негабаритных грузов. Собственный ж.д. подъездной путь. Охраняемая
+                        территория, удобные подъездные пути для любых видов транспорта. На закрытой территории базы обеспечивается функционирование всех инженерных сетей.
+                    </p>
+                    <button class="button button-shop is-black is-uppercase button-consultation">Получить консультацию</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="container container-form">
+            <p>УЗНАТЬ О ЦЕНАХ, ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ИЛИ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ</p>
+            <div class="control">
+                <input class="input" type="text" placeholder="Имя">
+                <input class="input" type="text" placeholder="Телефон">
+                <button type="submit" class="button is-black is-uppercase button-input">Отправить</button>
+            </div>
+        </div>
 
     </main>
+    <footer>
+        <nav class="footer-nav navbar is-fixed-navbar is-black" role="navigation" aria-label="main navigation">
+
+
+
+            <div class="navbar-menu">
+                <div class="navbar-start navbar-start--centered">
+                    <div class="navbar-item"><button class="button is-uppercase is-dark button-logo">Veles</button></div>
+                    <div class="navbar-item"><a href="#" class=" is-uppercase">Земля</a></div>
+                    <div class="navbar-item"><a href="#" class=" is-uppercase">Крановые площадки</a></div>
+                    <div class="navbar-item"><a href="#" class=" is-uppercase">Выгрузка вагонов</a></div>
+                    <div class="navbar-item"><a href="#" class=" is-uppercase">Фасовка</a></div>
+                    <div class="navbar-item"><a href="#" class="is-uppercase">Щебень</a></div>
+                    <div class="navbar-item"><span href="#" class="is-uppercase">+7 (927) 678-45-14</span>
+                        <div class="navbar-item"><span href="#" class="is-uppercase">г. Казань, Складская 20</span>
+                        </div>
+                    </div>
+                </div>
+
+        </nav>
+    </footer>
 
 
 
@@ -630,12 +685,12 @@
     $(document).ready(function() {
 
         // Check for click events on the navbar burger icon
-        $(".navbar-burger").click(function() {
+        $(".header-navbar-burger").click(function() {
 
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            $(".navbar-burger").toggleClass("is-active");
-            $(".navbar-menu").toggleClass("is-active");
-            $('.navbar-brand').toggleClass("is-black");
+            $(".header-navbar-burger").toggleClass("is-active");
+            $(".header-navbar-menu").toggleClass("is-active");
+            $('.header-navbar-brand').toggleClass("is-black");
         });
     });
 </script>

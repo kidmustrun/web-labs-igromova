@@ -7733,6 +7733,8 @@ body.has-navbar-fixed-bottom {
     display: block;
     line-height: 1.5;
     padding: 0.5rem 0.75rem;
+    justify-content: center;
+    text-align: center;
     position: relative;
 }
 
