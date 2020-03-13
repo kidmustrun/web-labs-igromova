@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-black" aria-label="main navigation">
 
 
             <div class="header-navbar-brand navbar-brand">
@@ -34,12 +34,12 @@
                     <div class="navbar-item"><a href="#" class=" is-uppercase">Выгрузка вагонов</a></div>
                     <div class="navbar-item"><a href="#" class=" is-uppercase">Фасовка</a></div>
                     <div class="navbar-item"><a href="#" class="is-uppercase">Щебень</a></div>
-                    <div class="navbar-item"><span href="#" class="is-uppercase">+7 (927) 678-45-14</span>
-                        <div class="navbar-item"><span href="#" class="is-uppercase">г. Казань, Складская 20</span>
+                    <div class="navbar-item"><span class="is-uppercase">+7 (927) 678-45-14</span>
+                        <div class="navbar-item"><span class="is-uppercase">г. Казань, Складская 20</span>
                         </div>
                     </div>
                 </div>
-
+            </div>
         </nav>
     </header>
     <main>
@@ -618,8 +618,8 @@
 
             </div>
         </div>
-        </div>
-        </div>
+
+
         <section class="hero is-black is-medium hero-content">
             <figure class="image is-5by4-mobile is-5by3-tablet">
                 <img src="media/12.jpg" alt="media">
@@ -657,7 +657,7 @@
 
     </main>
     <footer>
-        <nav class="footer-nav navbar is-fixed-navbar is-black" role="navigation" aria-label="main navigation">
+        <nav class="footer-nav navbar is-fixed-navbar is-black" aria-label="main navigation">
 
 
 
@@ -669,30 +669,30 @@
                     <div class="navbar-item"><a href="#" class=" is-uppercase">Выгрузка вагонов</a></div>
                     <div class="navbar-item"><a href="#" class=" is-uppercase">Фасовка</a></div>
                     <div class="navbar-item"><a href="#" class="is-uppercase">Щебень</a></div>
-                    <div class="navbar-item"><span href="#" class="is-uppercase">+7 (927) 678-45-14</span>
-                        <div class="navbar-item"><span href="#" class="is-uppercase">г. Казань, Складская 20</span>
+                    <div class="navbar-item"><span class="is-uppercase">+7 (927) 678-45-14</span>
+                        <div class="navbar-item"><span class="is-uppercase">г. Казань, Складская 20</span>
                         </div>
                     </div>
                 </div>
-
+            </div>
         </nav>
     </footer>
 
 
+    <script>
+        $(document).ready(function() {
 
-</body>
-<script>
-    $(document).ready(function() {
+            // Check for click events on the navbar burger icon
+            $(".header-navbar-burger").click(function() {
 
-        // Check for click events on the navbar burger icon
-        $(".header-navbar-burger").click(function() {
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            $(".header-navbar-burger").toggleClass("is-active");
-            $(".header-navbar-menu").toggleClass("is-active");
-            $('.header-navbar-brand').toggleClass("is-black");
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".header-navbar-burger").toggleClass("is-active");
+                $(".header-navbar-menu").toggleClass("is-active");
+                $('.header-navbar-brand').toggleClass("is-black");
+            });
         });
-    });
-</script>
+    </script>
+</body>
+
 
 </html>

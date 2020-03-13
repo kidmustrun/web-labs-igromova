@@ -58,7 +58,7 @@ body {
         margin-top: 2rem !important;
     }
     .hero-content {
-        padding-left: -12px;
+        padding-left: 12px;
         position: relative;
     }
     .hero-content p {
@@ -67,7 +67,7 @@ body {
     .hero-content figure {
         position: absolute;
         width: 50%;
-        top: 30%;
+        top: 45%;
         left: 50%;
     }
     .container-form p {
@@ -186,7 +186,7 @@ body {
         bottom: 5vh;
     }
     .hero-content .hero-body {
-        padding-top: 0 i !important;
+        padding-top: 0 !important;
     }
     .container-form p {
         font-size: 18px !important;
