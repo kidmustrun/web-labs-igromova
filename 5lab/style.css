@@ -1,0 +1,29 @@
+body {
+    font-size: 18px;
+    margin: 0;
+}
+
+@media print {
+    body {
+        font-size: 28px;
+    }
+    @page {
+        margin: 2cm;
+    }
+    h2 {
+        page-break-before: always;
+        color: darkred;
+    }
+    p {
+        orphans: 3;
+    }
+    img {
+        display: none;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    a[href^="http"]:not([href*="mospolytech.ru"]):after {
+        content: " (" attr(href) ")";
+    }
+}
