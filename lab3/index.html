@@ -9,29 +9,43 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.scrollme.js"></script>
     <title>Document</title>
+    <style>
+        #upbutton {
+            background: url("media/up.png") no-repeat top left;
+            height: 60px;
+            width: 60px;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+            display: none;
+            position: fixed;
+            z-index: 999;
+        }
+    </style>
 </head>
-<nav class="navbar is-fixed-navbar is-black" role="navigation" aria-label="main navigation" style="font-family: Impact;">
 
-
-    <div class="navbar-brand">
-        <a href="#">
-            <img src="media/logo.png" alt="logo" style="height: 3.25rem;"></a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="navbar-menu">
-        <div class="navbar-end">
-            <a href="#" class="navbar-item is-uppercase">Блог</a>
-            <a href="#" class="navbar-item is-uppercase">Фотогалерея</a>
-            <a href="#" class="navbar-item is-uppercase">Обо мне</a>
-        </div>
-    </div>
-</nav>
 
 <body>
+    <nav class="navbar is-fixed-navbar is-black" aria-label="main navigation" style="font-family: Impact;">
+
+
+        <div class="navbar-brand">
+            <a href="#">
+                <img src="media/logo.png" alt="logo" style="height: 3.25rem;"></a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a href="#" class="navbar-item is-uppercase">Блог</a>
+                <a href="#" class="navbar-item is-uppercase">Фотогалерея</a>
+                <a href="#" class="navbar-item is-uppercase">Обо мне</a>
+            </div>
+        </div>
+    </nav>
     <section class="hero is-dark is-fullheight">
         <div class="hero-body">
             <div class="container">
@@ -52,7 +66,7 @@
         </div>
     </section>
 
-    </div>
+
 
     <div class="container ">
         <h1 id="#top" class="title is-1">Горный Алтай</h1>
@@ -83,33 +97,21 @@
             }, 300);
         });
     </script>
+    <script>
+        $(document).ready(function() {
 
-    <style>
-        #upbutton {
-            background: url("media/up.png") no-repeat top left;
-            height: 60px;
-            width: 60px;
-            bottom: 30px;
-            right: 30px;
-            cursor: pointer;
-            display: none;
-            position: fixed;
-            z-index: 999;
-        }
-    </style>
-</body>
-<script>
-    $(document).ready(function() {
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
 
-        // Check for click events on the navbar burger icon
-        $(".navbar-burger").click(function() {
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
 
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            $(".navbar-burger").toggleClass("is-active");
-            $(".navbar-menu").toggleClass("is-active");
-
+            });
         });
-    });
-</script>
+    </script>
+
+</body>
+
 
 </html>
