@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul id="menu">
+            <li><img id="menu2" src="media/menu.png" alt="menu"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li>
+                <a href="#"><img src="media/Logo.png" alt="logo"></a>
+            </li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <img id="menu1" src="media/menu.png" alt="menu">
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h3>Food</h3>
+                <img src="media/Logo.png" alt="logo">
+                <h1>FARMING</h1>
+                <svg width="169" height="13" viewBox="0 0 169 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M167 11.0048C162 11.0048 148.606 2.00475 136 2.00475C123.394 2.00475 117.593 11.5699 105 11.0048C94.0815 10.5148 89.4269 2.23995 78.5 2.00475C66.831 1.75358 61.6593 11.5434 50 11.0048C39.8179 10.5344 35.692 1.86508 25.5 2.00475C15.6736 2.13941 2 11.0048 2 11.0048" stroke="#3F4042" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                <p>Food Farming is proud of our past and excited about our future. We strive to continue being one of India and New Zealand's great food companies, offering quality fruits and vegetable. </p>
+            </div>
+            <div class="image">
+                <img src="media/background.png" alt="back">
+            </div>
+        </div>
+        <div class="products">
+            <div class="products-list"><img src="media/wine.png" alt="product">
+                <p>Food Farming is proud of our past and excited about our future. </p>
+            </div>
+            <div class="products-list"><img src="media/wine.png" alt="product">
+                <p>We strive to continue being one of India and New Zealand's great food companies, offering quality fruits and vegetable.</p>
+            </div>
+            <div class="products-list"><img src="media/wine.png" alt="product">
+                <p>Food Farming is proud of our past and excited about our future. </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li>
+                <a href="#"><img src="media/Logo2.png" alt="logo"></a>
+            </li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+    </footer>
+    <script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu1").click(function() {
+                $("#menu").toggleClass("flex");
+            })
+            $("#menu2").click(function() {
+                $("#menu").toggleClass("flex");
+            })
+        });
+    </script>
+</body>
+
+</html>
